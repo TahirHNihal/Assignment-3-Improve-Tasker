@@ -6,8 +6,8 @@ import TaskBoard from "./components/TaskBoard/TaskBoard";
 import "react-toastify/dist/ReactToastify.css";
 import { useReducer } from "react";
 import { tasksData } from "./data/data";
-import { TaskContext } from "./contexts/taskContext";
 import taskReducer from "./reducers/taskReducer";
+import { TaskContext } from "./contexts/TaskContext";
 
 export default function App() {
   const [tasks, dispatch] = useReducer(taskReducer, tasksData);
