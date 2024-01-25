@@ -8,7 +8,6 @@ import { TaskContext } from "../../contexts/taskContext";
 
 const TaskBoard = () => {
   const { tasks, dispatch } = useContext(TaskContext);
-  // const [tasks, dispatch] = useReducer(TaskReducer, tasksData);
   const [showModal, setShowModal] = useState(false);
   const [taskToUpdate, setTaskToUpdate] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
