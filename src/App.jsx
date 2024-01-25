@@ -5,9 +5,9 @@ import HeroSec from "./components/HeroSec";
 import TaskBoard from "./components/TaskBoard/TaskBoard";
 import "react-toastify/dist/ReactToastify.css";
 import { useReducer } from "react";
-import TaskReducer from "./reducers/TaskReducer";
 import { tasksData } from "./data/data";
 import { TaskContext } from "./contexts/taskContext";
+import TaskReducer from "./reducers/TaskReducer";
 
 export default function App() {
   const [tasks, dispatch] = useReducer(TaskReducer, tasksData);
