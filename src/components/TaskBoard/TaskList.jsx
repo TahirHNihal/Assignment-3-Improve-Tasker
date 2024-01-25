@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { FaStar } from "react-icons/fa";
-import { TaskContext } from "../../contexts/taskContext";
+import { TaskContext } from "../../contexts/TaskContext";
+
 
 const TaskList = ({ onEdit, onClickFav, onSingleDelete, searchQuery }) => {
   const { tasks } = useContext(TaskContext);

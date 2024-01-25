@@ -4,7 +4,7 @@ import AddTaskModal from "./AddTaskModal";
 import TaskActions from "./TaskActions";
 import { toast } from "react-toastify";
 import EmptyTask from "./EmptyTask";
-import { TaskContext } from "../../contexts/taskContext";
+import { TaskContext } from "../../contexts/TaskContext";
 
 const TaskBoard = () => {
   const { tasks, dispatch } = useContext(TaskContext);
