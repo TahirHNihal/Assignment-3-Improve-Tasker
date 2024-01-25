@@ -1,5 +1,5 @@
 // taskReducer.js
-const TaskReducer = (state, action) => {
+const taskReducer = (state, action) => {
   switch (action.type) {
     case "ADD_TASK":
       return [...state, action.payload];
@@ -22,4 +22,4 @@ const TaskReducer = (state, action) => {
   }
 };
 
-export default TaskReducer;
+export default taskReducer;

@@ -7,10 +7,10 @@ import "react-toastify/dist/ReactToastify.css";
 import { useReducer } from "react";
 import { tasksData } from "./data/data";
 import { TaskContext } from "./contexts/taskContext";
-import TaskReducer from "./reducers/taskReducer";
+import taskReducer from "./reducers/taskReducer";
 
 export default function App() {
-  const [tasks, dispatch] = useReducer(TaskReducer, tasksData);
+  const [tasks, dispatch] = useReducer(taskReducer, tasksData);
   return (
     <TaskContext.Provider value={{ tasks, dispatch }}>
       <>
