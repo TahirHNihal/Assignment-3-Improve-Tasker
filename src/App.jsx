@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useReducer } from "react";
 import { tasksData } from "./data/data";
 import { TaskContext } from "./contexts/taskContext";
-import TaskReducer from "./reducers/TaskReducer";
+import TaskReducer from "./reducers/taskReducer";
 
 export default function App() {
   const [tasks, dispatch] = useReducer(TaskReducer, tasksData);
